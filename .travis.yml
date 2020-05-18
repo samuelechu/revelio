@@ -22,7 +22,7 @@ branches:
     - master
     - docker
 before_deploy:
-  - cp ${TRAVIS_BUILD_DIR}/RoadMap.html target/github-pages/.
+  - cp ${TRAVIS_BUILD_DIR}/RoadMap.html ${TRAVIS_BUILD_DIR}/target/github-pages/.
   - cd ${TRAVIS_BUILD_DIR}/app
   - yarn install --frozen-lockfile
   - yarn build:storybook
