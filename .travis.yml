@@ -21,8 +21,8 @@ branches:
   only:
     - master
     - docker
-before_deploy:
-  - cd $TEST_DIR
+before_deploy: 
+  - cd $TEST_DIR 
   - yarn install --frozen-lockfile
   - yarn build:storybook
   - mv target/storybook ../target/github-pages/.
