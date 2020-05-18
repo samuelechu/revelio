@@ -22,7 +22,6 @@ branches:
     - master
     - docker
 before_deploy:
-  - cp RoadMap.html target/github-pages/.
   - cd app
   - yarn install --frozen-lockfile
   - yarn build:storybook
